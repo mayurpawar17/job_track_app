@@ -126,7 +126,6 @@ class MyApplicationsScreen extends StatelessWidget {
         backgroundColor: const Color(0xFF004DCF),
         child: const Icon(Icons.add, color: Colors.white, size: 30),
       ),
-      // bottomNavigationBar: _buildBottomNav(),
     );
   }
 

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:job_track_app/features/applications/my_applications_screen.dart';
 import 'package:job_track_app/features/dashboard/dashboard_screen.dart';
-import 'package:job_track_app/features/onboarding/onboarding_second_screen.dart';
 
 import '../../core/constants/app_colors.dart';
-import '../onboarding/onboarding_screen.dart';
+import '../analytic/analytics_screen.dart';
+import '../profile/profile_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -19,14 +19,14 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _screens = [
     DashboardScreen(),
     MyApplicationsScreen(),
-    OnboardingSecondScreen(),
-    OnboardingScreen(),
+    AnalyticsScreen(),
+    ProfileScreen(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      backgroundColor: AppColors.scaffoldColor,
       body: SafeArea(
         child: IndexedStack(index: _currentIndex, children: _screens),
       ),

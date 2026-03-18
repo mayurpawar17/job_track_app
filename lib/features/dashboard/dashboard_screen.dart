@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:job_track_app/core/constants/app_colors.dart';
 
+import '../addJobApplication/presentation/screen/widget/add_job_application_screen.dart';
+
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
 
@@ -137,8 +139,13 @@ class DashboardScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: brandBlue,
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (_) => const AddJobApplication()),
+          );
+        },
+        backgroundColor: const Color(0xFF004DCF),
         child: const Icon(Icons.add, color: Colors.white, size: 30),
       ),
     );

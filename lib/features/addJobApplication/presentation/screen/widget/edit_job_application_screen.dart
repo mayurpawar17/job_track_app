@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../../../../core/widgets/app_textfield.dart';
 import '../../../../../core/widgets/common_appbar.dart';
 
@@ -172,11 +173,6 @@ class _EditJobDetailsScreenState extends State<EditJobDetailsScreen> {
             const SizedBox(height: 100),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: brandBlue,
-        child: const Icon(Icons.add, color: Colors.white),
       ),
     );
   }
