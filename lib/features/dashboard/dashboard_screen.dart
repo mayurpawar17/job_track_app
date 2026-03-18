@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../../core/widgets/common_appbar.dart';
+import 'package:job_track_app/core/constants/app_colors.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -11,13 +11,13 @@ class DashboardScreen extends StatelessWidget {
     const Color bgLight = Color(0xFFF8F9FE);
 
     return Scaffold(
-      backgroundColor: bgLight,
-      appBar: const CommonAppBar(
-        title: "JobTrack",
-        showBackButton: false, // Root screen
-      ),
+      backgroundColor: AppColors.scaffoldColor,
+      // appBar: const CommonAppBar(
+      //   title: "JobTrack",
+      //   showBackButton: false, // Root screen
+      // ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

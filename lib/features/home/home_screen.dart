@@ -26,8 +26,10 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-      body: IndexedStack(index: _currentIndex, children: _screens),
+      // backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      body: SafeArea(
+        child: IndexedStack(index: _currentIndex, children: _screens),
+      ),
 
       bottomNavigationBar: NavigationBar(
         selectedIndex: _currentIndex,
